@@ -1,0 +1,61 @@
+:root{
+    --color1 : #1a2238;
+    --color2 : #f4db7d;
+    --color3 : #9daaf2;
+    --color4 : #ff6a3d;
+}
+
+body{
+    background: linear-gradient(180deg, var(--color1), var(--color3));
+    height: 80vh;
+}
+
+#timer_box{
+    background-color: transparent;
+    color: var(--color1);
+    box-shadow: 5px 5px 2px var(--color1);
+    border: 2px solid var(--color1);
+    backdrop-filter: blur(10px);
+}
+
+#time{
+    color: var(--color3)
+}
+
+#start, #reset, #pause{
+    background-color: var(--color1);
+    color:var(--color3);
+    box-shadow: 3px 3px 5px var(--color3), 2px 2px 3px black inset;
+}
+
+
+#start:active, #reset:active, #pause:active{
+    background-color: transparent;
+    color:var(--color1);
+    font-weight: 600;
+    border: 2px solid 
+}
+
+h1{
+    box-shadow: 0px 2px 0px var(--color1);
+}
+
+hr{
+    border: 1.2px solid var(--color1);
+    background-color: var(--color1);
+}
+
+progress {
+    border-radius: 7px;
+    height: 22px;
+    box-shadow: 7px 7px 4px var(--color1);
+}
+progress::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid var(--color1);
+}
+progress::-webkit-progress-value {
+    background-color: var(--color3);
+    border-radius: 5px;
+}
